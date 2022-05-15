@@ -1,0 +1,466 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    /* background-image: url('img/back.jpg'); */
+    /* font-family: 'ZCOOL XiaoWei', serif; */
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    /* font-family: 'Stint Ultra Condensed', cursive; */
+    /* font-family: 'Stint Ultra Condensed', cursive; */
+}
+
+/* CSS Variables */
+/* :root{
+
+} */
+
+header{
+    color: white;
+    background-color: black;
+    position: sticky;
+    height: 50px;
+}
+header:hover{
+    transition: all 0.5s ease-in-out;
+    height: 122px;
+    padding-top: 50px;
+}
+
+/* Navigtion bar Section- also list-styling*/
+#navigation{
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    position: sticky;
+    /* bottom:  35px; */
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+#navigation::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    /* margin: -10px; */
+    top: 25px;
+    width: 100%;
+    /* height: 6.5vh; */
+    z-index: -1;
+    /* opacity: 0.8; */
+}
+
+/* Logo & Image */
+#logo{
+    margin: 0px 5px;
+    /* margin-top: 5px; */
+    padding: 0px 5px;
+}
+#logo img{
+    height: 100px;
+    margin: 10px;
+    padding: 0px;
+    border: 6px solid black;
+    /* width:80px;
+    height: 100px; */
+    border-radius: 40px;
+    cursor: pointer;
+}
+#logo img:hover{
+    transition: all 1s ease-in-out;
+    /* height: 150px;*/
+    border: 6px solid white;
+    color: black; 
+    transform: translateX(30px);
+}
+
+ul{
+    position: relative;
+    bottom:  35px;
+    display: flex
+}
+
+ul li{
+    margin: 0px 4px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+ul li a{
+    /* margin: 0px 10px; */
+    margin-top: 8px;
+    display: block;
+    padding: 5px 25px;
+    /* bottom: 10px; */
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul li a:hover{
+    transition: all 0.5s ease-in-out;
+    transform: translateX(20px);
+    /* width: 110px;
+    height: 44px; */
+    /* font-size: 1.1rem; */
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 18px;
+}
+
+ul .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    left: 370px;
+}
+
+ul .r{
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+/* ul .r #logo{
+    
+} */
+
+ul #search input{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px 10px;
+    padding: 0px 25px;
+    border-radius: 8px;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#setting button{
+    /* display: block; */
+    padding: 0px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#more button{
+    /* display: block; */
+    padding: 1.5px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    /* height: 100px; */
+    cursor: pointer;
+}
+
+ul button:hover, ul input:hover{
+    transition: all 0.5s ease-in-out;
+    transform: translate(-8px, 8px);
+}
+
+
+
+
+/* Home Section*/
+#home{
+    margin: 125px 0px;
+    padding: 90px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    font-weight: bold;
+    /* text-shadow: 1px 1px  srgb(83, 79, 79); */
+}
+
+#home::before{
+    content:"";
+    position: absolute;
+    background-image: url('img/back3.jpg');
+     /* no-repeat center center/cover; */
+     top: 10px;
+    /* bottom: 150px; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#home h2{
+    color: black;
+    font-size: 3.2rem;
+    /* font-family: 'ZCOOL XiaoWei', serif; */
+    /* font-family: 'ZCOOL QingKe HuangYou', cursive; */
+    /* font-family: 'Stint Ultra Condensed', cursive; */
+    /* font-family: 'Gorditas', cursive; */
+    
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px;
+}
+#home p{
+    padding: 10px;
+    color: black;
+    font-size: 1.15rem;
+    text-align: center;
+    /* font-family: 'Stint Ultra Condensed', cursive; */
+}
+
+.btn{
+    font-size: 1.15em;
+    padding: 7px;
+    margin: 15px;
+    width: 100px;
+    height: 36px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    
+}
+.btn:hover{
+    transition: all 0.5s ease-in-out;
+    width: 110px;
+    height: 40px;
+    font-size: 1.25rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 18px;
+}
+
+
+
+
+
+/* Service Section/Part */
+.service-container{
+    margin: 250px 0px;
+    padding: 0px 50px;
+}
+
+#service{
+    display: flex;
+    height: 30px;
+}
+
+#service .box{
+    margin: 0px 30px;
+    padding: 15px;
+    border: 2px solid rgb(133, 17, 17);
+    height: 230px;
+    /* height: 100%; */
+    border-radius: 40px;
+    cursor: pointer;
+}
+#service .box:hover{
+    transition: all 0.5s ease-in-out;
+    /* margin: 0px 10px; */
+    /* padding: 8px; */
+    /* width: 110px;
+    height: 44px;
+    font-size: 1.1rem; */
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    /* border-radius: 18px; */
+
+    transform: rotate(10deg);
+}
+#service #box3:hover{
+    transform: rotate(-10deg);
+}
+#service #box2:hover{
+
+    transform: rotateY(20deg);
+}
+#service .box img{
+    display: block;
+    margin: auto;
+    height: 100px;
+    border-radius: 75px;
+}
+
+
+/* Client Section */
+
+.client-section{
+    /* position: absolute; */
+    /* top: 50px; */
+    margin: 0px 10px;
+    padding: 0px 10px;
+    /* position: relative; */
+}
+
+#client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.client-item{
+    padding: 15px 40px;
+}
+.client-item:hover{
+    transition: all 0.6s ease-in-out;
+    transform: translate(8px,-8px);
+    cursor: pointer;
+}
+.client-item img{
+    height: 65px;
+}
+#item3 img{
+    border-radius: 100px;
+}
+#item4 img{
+    background-color: white;
+    border-radius: 100px;
+}
+#item5 img{
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    height: 50px;
+}
+/* .client-section h2{
+    font-size: 27px;
+} */
+
+.client-section::before{
+    content:"";
+    position: absolute;
+    top: 620px;
+    left: 0px;
+    /* top: 605px; */
+    /* left: 160px; */
+    /* right: 10px; */
+    background-image: url('img/back9.jpg');
+    background-repeat: no-repeat;
+     /* no-repeat center center/cover;  */
+    width: 100%;
+    height: 140%;
+    z-index: -1;
+    opacity: 0.5;
+    display: block;
+    margin: auto;
+}
+
+
+/* Contact Section */
+.contact-section{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#contact{
+    /* position: relative; */
+    font-size: 1.2rem;
+}
+
+.contact-section h2{
+     margin-top: 10px;
+     margin-bottom: 12px; 
+}
+
+/* #contact::before{ */
+.contact-section::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    /* background-image: url('img/back3.jpg');
+    background-repeat: no-repeat; */
+    width: 100%;
+    height: 110%;
+    z-index: -3;
+    opacity: 0.9;
+}
+
+
+#contact .form-group:hover{
+    /* text-align: center; */
+    transition: all 0.5s ease-in-out;
+    transform: rotate(2.8deg);
+}
+#contact label{
+    font-weight: bold;
+}
+
+#contact input{
+    margin: 3px;
+    padding: 4px;
+    text-align: center;
+    font-weight: bold;
+    width: 200px;
+}
+#contact textarea{
+    margin: 5px;
+    padding: 4px;
+    text-align: center;
+    width: 200px;
+    /* height: 2000px; */
+}
+#f3 input{
+    width: 182px;
+}
+#f4 textarea{
+    width: 178px;
+    height: 63px;
+}
+#f5 .btn{
+    display: block;
+    margin: 0px auto;
+    font-size: 15px;
+}
+#f5 .btn:hover{
+    transition: all 0.5 ease-in-out;
+    transform: rotate(-10deg);
+    font-size: 15px;
+    width: 100px;
+    height: 36px;
+}
+
+
+
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 27px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 15px;
+    font-family: 'Stint Ultra Condensed', cursive;
+}
+
+
+
+/* Utility Classes */
+.h-primary{
+    padding: 12px;
+    font-size: 2rem;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+.h-secondary{
+    padding: 12px;
+    font-size: 1.8rem;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.center{
+    text-align: center;
+    /* font-family: 'ZCOOL QingKe HuangYou', cursive; */
+}
+.cent{
+    text-align: center;
+}
